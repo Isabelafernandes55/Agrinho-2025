@@ -1,0 +1,81 @@
+const css = `
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0 20px;
+    color: #333;
+}
+header {
+    text-align: center;
+    padding: 30px 10px 20px;
+    background: #2e7d32;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+header h1 {
+    margin: 0;
+    font-weight: 700;
+}
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+section {
+    background: white;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+    border-radius: 8px;
+    flex: 1 1 450px;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+}
+section h2 {
+    border-bottom: 3px solid #2e7d32;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    color: #2e7d32;
+    font-size: 1.8rem;
+}
+.subsection {
+    margin-bottom: 20px;
+}
+.subsection h3 {
+    margin-bottom: 8px;
+    color: #1b5e20;
+    font-size: 1.3rem;
+}
+.subsection p {
+    line-height: 1.5;
+    font-size: 1rem;
+}
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        gap: 30px;
+    }
+    section {
+        flex: 1 1 100%;
+    }
+}
+`;
+
+// Cria o elemento <style>
+const style = document.createElement('style');
+style.textContent = css;
+
+// Adiciona ao <head>
+document.head.appendChild(style);
