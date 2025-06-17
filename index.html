@@ -1,116 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Conexão Campo e Cidade - SENAR</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidade e Campo - 30 Anos de SENAR</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
             color: #333;
+            margin: 0;
+            padding: 0;
         }
         header {
-            text-align: center;
-            padding: 30px 10px 20px;
-            background: #2e7d32;
+            background-color: #006f38;
             color: white;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
         }
-        header h1 {
-            margin: 0;
-            font-weight: 700;
+        .container {
+            width: 80%;
+            margin: 0 auto;
         }
-        main {
-            max-width: 1200px;
-            margin: 40px auto;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            justify-content: center;
+        h1, h2 {
+            color: #006f38;
         }
-        section {
-            background: white;
-            box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
-            border-radius: 8px;
-            flex: 1 1 450px;
-            padding: 25px 30px;
-            display: flex;
-            flex-direction: column;
+        .timeline {
+            list-style-type: none;
+            padding: 0;
         }
-        section h2 {
-            border-bottom: 3px solid #2e7d32;
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-            color: #2e7d32;
-            font-size: 1.8rem;
-        }
-        .subsection {
-            margin-bottom: 20px;
-        }
-        .subsection h3 {
-            margin-bottom: 8px;
-            color: #1b5e20;
-            font-size: 1.3rem;
-        }
-        .subsection p {
-            line-height: 1.5;
-            font-size: 1rem;
+        .timeline li {
+            background-color: #e1f5d4;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         footer {
+            background-color: #006f38;
+            color: white;
             text-align: center;
-            padding: 20px 10px;
-            font-size: 0.9rem;
-            color: #666;
-            border-top: 1px solid #ddd;
-            margin-top: 50px;
-        }
-
-        @media (max-width: 900px) {
-            main {
-                flex-direction: column;
-                gap: 30px;
-            }
-            section {
-                flex: 1 1 100%;
-            }
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Conexão entre Campo e Cidade - SENAR</h1>
-        <p>Comparativo entre Antigamente e Atualmente</p>
+        <h1>Cidade e Campo - 30 Anos de SENAR</h1>
+        <p>Celebrando as conquistas e a transformação do Brasil Rural</p>
     </header>
-    <main>
+
+    <div class="container">
         <section>
-            <h2>Campo</h2>
-            <div class="subsection">
-                <h3>Antigamente</h3>
-                <p>No passado, o campo era marcado por práticas agrícolas tradicionais, muitas vezes familiares, com pouca mecanização e acesso limitado à tecnologia. A comunicação com a cidade era difícil e lenta.</p>
-            </div>
-            <div class="subsection">
-                <h3>Atualmente</h3>
-                <p>Hoje, graças ao SENAR, o campo conta com formação profissional, acesso a tecnologias modernas, maquinário avançado e práticas sustentáveis. A comunicação com a cidade é facilitada pela internet e transporte eficiente.</p>
-            </div>
+            <h2>O SENAR e a Transformação no Campo</h2>
+            <p>O SENAR - Serviço Nacional de Aprendizagem Rural - é uma instituição essencial para o desenvolvimento da educação e da capacitação no campo. Desde sua criação, tem sido responsável por levar conhecimentos e técnicas inovadoras para os trabalhadores rurais, contribuindo para a melhoria da qualidade de vida e o fortalecimento da agricultura e pecuária no Brasil.</p>
         </section>
 
         <section>
-            <h2>Cidade</h2>
-            <div class="subsection">
-                <h3>Antigamente</h3>
-                <p>A cidade dependia muito do campo para o abastecimento de alimentos, mas havia pouco conhecimento sobre as práticas rurais. A ligação cultural e econômica entre as áreas era limitada.</p>
-            </div>
-            <div class="subsection">
-                <h3>Atualmente</h3>
-                <p>Hoje, há uma maior valorização da agricultura e dos produtores rurais, impulsionada por programas como o SENAR, que promovem integração e capacitação. A cidade também investe em mercados locais e consumo consciente.</p>
-            </div>
+            <h2>30 Anos de Conquistas</h2>
+            <p>Em 2025, o SENAR comemora 30 anos de atuação no Brasil, promovendo a educação rural e fazendo a diferença na vida de milhões de pessoas. Durante esse período, foram realizados cursos, capacitações e projetos que ajudaram a modernizar o campo brasileiro, integrando a tecnologia ao trabalho rural e proporcionando oportunidades para novos horizontes no setor agropecuário.</p>
         </section>
-    </main>
+
+        <section>
+            <h2>Linha do Tempo - 30 Anos de SENAR</h2>
+            <ul class="timeline">
+                <li><strong>1995:</strong> Fundação do SENAR e início de sua jornada no apoio ao trabalhador rural.</li>
+                <li><strong>2005:</strong> Expansão dos cursos de qualificação profissional em várias áreas do agro.</li>
+                <li><strong>2015:</strong> Parcerias com grandes instituições e lançamento de programas voltados à sustentabilidade e inovação no campo.</li>
+                <li><strong>2025:</strong> 30 anos de SENAR: mais de 20 milhões de pessoas capacitadas, com novos desafios e oportunidades para o futuro do agro.</li>
+            </ul>
+        </section>
+    </div>
+
     <footer>
-        &copy; 2025 SENAR - Serviço Nacional de Aprendizagem Rural
+        <p>&copy; 2025 SENAR - Todos os direitos reservados</p>
     </footer>
+
 </body>
 </html>
